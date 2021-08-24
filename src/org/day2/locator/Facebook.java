@@ -21,7 +21,7 @@ public class Facebook {
 		WebElement checklogin = driver.findElement(By.name("login"));
 		checklogin.click();
 		
-		
+		driver.close();
 	}
 
 }
