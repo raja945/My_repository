@@ -1,9 +1,6 @@
 package org.day2.locator;
 
 import java.util.Date;
-
-import javax.print.attribute.standard.PrinterMakeAndModel;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,10 +21,10 @@ public class Facebook {
 		
 		WebElement checklogin = driver.findElement(By.name("login"));
 		checklogin.click();
-		driver.close();
+		
 		Date d=new Date();
 		System.out.println(d);
-		Date d1=new Date();
+		driver.close();
 	}
 
 }
