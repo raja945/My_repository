@@ -13,8 +13,5 @@ public static void main(String[] args) {
 	d.get("https://www.amazon.in/");
 	d.findElement(By.id("twotabsearchtextbox")).sendKeys("iphone");
 	d.findElement(By.id("nav-search-submit-button")).click();
-	
-	d.close();
-	
 }
 }
