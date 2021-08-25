@@ -25,9 +25,9 @@ public class Facebook {
 		WebElement checklogin = driver.findElement(By.name("login"));
 		checklogin.click();
 		driver.close();
-		
 		Date d=new Date();
 		System.out.println(d);
+		Date d1=new Date();
 	}
 
 }
