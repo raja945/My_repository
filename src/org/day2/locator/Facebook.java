@@ -1,5 +1,7 @@
 package org.day2.locator;
 
+import java.util.Date;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,6 +24,7 @@ public class Facebook {
 		checklogin.click();
 		
 		driver.close();
+		Date d=new Date();
 	}
 
 }
