@@ -2,6 +2,8 @@ package org.day2.locator;
 
 import java.util.Date;
 
+import javax.print.attribute.standard.PrinterMakeAndModel;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,11 +11,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Facebook {
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", 
-				"C:\\Users\\Satz\\eclipse-workspace\\Selenium\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\Satz\\Documents\\Cloning\\Selenium\\pgr_repository\\Drivers\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
-		driver.get("https://www.facebook.com/");
 		
+		driver.get("https://www.facebook.com/");
 		WebElement checkmail = driver.findElement(By.name("email"));
 		checkmail.sendKeys("Greens@gmail.com");
 		
@@ -22,9 +24,10 @@ public class Facebook {
 		
 		WebElement checklogin = driver.findElement(By.name("login"));
 		checklogin.click();
-		
 		driver.close();
 		Date d=new Date();
+		System.out.println(d);
+		Date d1=new Date();
 	}
 
 }
