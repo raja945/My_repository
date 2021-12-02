@@ -18,6 +18,7 @@ public class Ques1_1 {
 		String url = driver.getCurrentUrl();
 		System.out.println(url);
 		
+		System.out.println(url);
 		driver.quit();
 	}
 }
